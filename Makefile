@@ -5,9 +5,7 @@ LDFLAGS = -L./externalLibraries/lib
 LIBS = -lSDL2 -lSDL2main
 
 # Source and object files
-SRC = main.cpp \
-      ImGui/imgui.cpp ImGui/imgui_draw.cpp ImGui/imgui_impl_sdl2.cpp \
-      ImGui/imgui_impl_sdlrenderer2.cpp ImGui/imgui_tables.cpp ImGui/imgui_widgets.cpp
+SRC = main.cpp $(wildcard ImGui/*.cpp)
 OBJ = $(SRC:.cpp=.o)
 EXEC = PROJECTNAME.exe
 
