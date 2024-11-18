@@ -7,7 +7,7 @@ LIBS = -lSDL2 -lSDL2main
 # Source and object files
 SRC = main.cpp $(wildcard ImGui/*.cpp)
 OBJ = $(SRC:.cpp=.o)
-EXEC = PROJECTNAME.exe
+EXEC = GameEngine.exe
 
 # Default target
 all: $(EXEC)
